@@ -1,42 +1,33 @@
-#header1{
-    color:rgb(7, 7, 185)
+/* Main site Pallette*/
+
+:root {
+    --blue: rgb(7,7,185); /*Headers, Footers, Pararghraphs, Buttons*/
+    --lightblue: rgb(122, 202, 255); /*Page color*/
+    --green: rgb(0,100,0);/*Test*/
 }
-#header2{
-    color:rgb(7, 7, 185)
+
+#SignUp{
+    background-image: url("images/cloud1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
 }
-#header3{
-    color:rgb(7, 7, 185)
+
+
+h1{
+    color: var(--blue);
 }
-#header4{
-    color:rgb(7, 7, 185)
+h2{
+    color: var(--blue)
 }
-#header5{
-    color:rgb(7, 7, 185)
+h3{
+    color: var(--blue)
 }
-#header6{
-    color:rgb(7, 7, 185)
-}
-#header7{
-    color:rgb(7, 7, 185)
-}
-#header8{
-    color:rgb(7, 7, 185)
-}
-#header9{
-    color:rgb(7, 7, 185)
-}
-#header10{
-    color:rgb(7, 7, 185)
-}
-#header11{
-    color:rgb(7, 7, 185)
-}
-#header12{
-    color:rgb(7, 7, 185)
-}
-#header13{
-    color:rgb(7, 7, 185)
-}
+
+
 #footer{
     color:rgb(7,7,185)
 }
@@ -54,6 +45,7 @@
 }
 #paragraph1{
     color:rgb(7, 7, 185)
+
 }
 #paragraph2{
     color:rgb(7, 7, 185)
@@ -106,16 +98,18 @@
 #password{
     color:rgb(7, 7, 185)
 }
-#button{
-    color:rgb(7, 7, 185);
-    background-color:rgb(0, 109, 182);
-}
-
-
-#button:hover{
-    color:rgb(6, 64, 112)
-}
 #submit{
     color:rgb(7, 7, 185);
-    background-color: red;
+    background-color:rgb(122, 202, 255)
+}
+#submit:hover{
+    color:rgb(0, 0, 0);
+    background-color: rgb(0, 147, 245);
+}
+#email{
+    color:rgb(7,7,185)
+}
+#nav{
+    background-color: rgb(7,7,185);
+    color: rgb(122, 202, 255);
 }
