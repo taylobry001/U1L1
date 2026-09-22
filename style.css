@@ -4,6 +4,7 @@
     --blue: rgb(7,7,185); /*Headers, Footers, Pararghraphs, Buttons*/
     --lightblue: rgb(122, 202, 255); /*Page color*/
     --green: rgb(0,100,0);/*Test*/
+    --bc: rbg(0,0,0);
 }
 
 #SignUp{
@@ -16,82 +17,57 @@
     
 }
 
+#dark-mode{
+    background-color: black;
+}
 
 h1{
     color: var(--blue);
+    font: Garamond;
+}
+#header{
+    color: rgb(7, 7, 128)
 }
 h2{
-    color: var(--blue)
+    color: var(--blue);
+    font: Garamond;
 }
 h3{
-    color: var(--blue)
+    color: var(--blue);
+    font: Garamond;
+}
+p{
+    color: var(--blue);
+    font: Garamond;
 }
 
-
+footer{
+    color:rgb(37, 37, 231);
+    background-color: rgb(83, 169, 226);
+    outline-color: rgb(27,115,173);
+    border-color: rgb(27, 115, 173);
+    border: 3px solid;
+    border-radius: 1rem;
+    margin: 100px;
+    padding: 8.8px;
+    outline-style: groove;
+    
+}
 #footer{
-    color:rgb(7,7,185)
+    color:rgb(37, 37, 231);
+    background-color: rgb(83, 169, 226);
+    outline-color: rgb(27,115,173);
+    border-color: rgb(27, 115, 173);
+    border: 3px solid;
+    border-radius: 1rem;
+    margin: 20px;
+    padding: 8.8px;
+    outline-style: groove;
 }
 #footer-text{
     color:rgb(7,7,185)
 }
-#footer{
-    background-color:rgb(122, 202, 255)
-}
-#paragraph{
-    color:rgb(7, 7, 185)
-}
-#paragraph{
-    background-color:rgb(122, 202, 255)
-}
-#paragraph1{
-    color:rgb(7, 7, 185)
 
-}
-#paragraph2{
-    color:rgb(7, 7, 185)
-}
-#paragraph3{
-    color:rgb(7, 7, 185)
-}
-#paragraph4{
-    color:rgb(7, 7, 185)
-}
-#paragraph5{
-    color:rgb(7, 7, 185)
-}
-#paragraph6{
-    color:rgb(7, 7, 185)
-}
-#paragraph7{
-    color:rgb(7, 7, 185)
-}
-#paragraph8{
-    color:rgb(7, 7, 185)
-}
-#paragraph9{
-    color:rgb(7, 7, 185)
-}
-#paragraph10{
-    color:rgb(7, 7, 185)
-}       
-#paragraph11{
-    color:rgb(7, 7, 185)
-}
-#paragraph12{
-    color:rgb(7, 7, 185)
-}
-#paragraph13{
-    color:rgb(7, 7, 185)
-}
-#paragraph14{
-    color:rgb(7, 7, 185)
-}
-#paragraph15{
-    color:rgb(7, 7, 185)
-}
-#paragraph16{
-    color:rgb(7, 7, 185)
-}
 #email{
     color:rgb(7, 7, 185)
 }
@@ -103,6 +79,7 @@ h3{
     background-color:rgb(122, 202, 255)
 }
 #submit:hover{
+    transform: scale(1.1);
     color:rgb(0, 0, 0);
     background-color: rgb(0, 147, 245);
 }
@@ -110,6 +87,83 @@ h3{
     color:rgb(7,7,185)
 }
 #nav{
-    background-color: rgb(7,7,185);
-    color: rgb(122, 202, 255);
+    color:rgb(37, 37, 231);
+    background-color: rgb(83, 169, 226);
+    outline-color: rgb(27,115,173);
+    border-color: rgb(27, 115, 173);
+    border: 3px solid;
+    border-radius: 1rem;
+    margin: .45px;
+    padding: 8.5px;
+    outline-style: ridge;
+   
+}
+
+#chicago{
+    max-width: 50%;
+    position: fixed;
+
+}
+
+#MapFrame{
+    margin: 2px;
+    max-width: fit-content;
+    outline:auto;
+    outline-style: groove;
+    border: 6.5px;
+    border-style: groove;
+    outline-color: rgb(27, 115, 175);
+    border-color: rgb(12, 96, 165);
+}
+
+#image{
+    position: sticky;
+    color:rgb(37, 37, 231);
+    outline-color: rgb(2, 87, 143);
+    border-color: rgb(7, 56, 88);
+    outline-width: 10px;
+    margin: 5.45px;
+    padding: 1;
+    outline-style: groove;
+   
+}
+
+audio{
+    position: sticky;
+    padding: 10px;
+}
+
+
+
+@view-transition{
+    navigation: auto;
+}
+
+::view-transition-group(root){
+    animation-duration: 0.999999s;
+    animation-timing-function: ease-in-out;
+}
+
+
+::view-transition-old(root){
+    animation-name: slide-out;
+}
+
+:view-transition-old(root){
+    animation-name: slide-in;
+}
+
+@keyframes slide-out {
+    to { 
+        opacity: 0;
+        translate: -50vw;
+    }
+}
+
+
+@keyframes slide-in {
+    form { 
+        opacity: 0;
+        translate: 50vw;
+    }
 }
