@@ -14,6 +14,9 @@
 }
 
 body{
+font-family: Garamond, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 1.05 rem ;
+line-height: 1.6 ;
 background:  rgb(114, 202, 255, 1);
 }
 
