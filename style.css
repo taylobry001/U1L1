@@ -1,23 +1,19 @@
-/* Main site Pallette*/
-
 :root {
-    --blue: rgb(7,7,185); /*Headers, Footers, Pararghraphs, Buttons*/
-    --lightblue: rgb(122, 202, 255); /*Page color*/
-    --green: rgb(0,100,0);/*Test*/
-    --bc: rbg(0,0,0);
+    --blue: rgb(7,7,185); 
+    --lightblue: rgb(122, 202, 255); 
+    --green: rgb(0,100,0);
+    --bc: rgb(0,0,0);
 }
-
 
 .intro{
     width: 100%;
-
 }
 
-body{
-font-family: Garamond, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 1.05 rem ;
-line-height: 1.6 ;
-background:  rgb(114, 202, 255, 1);
+body {
+    font-family: 'Your Reading Font', Garamond, serif; 
+    font-size: 1.05rem; 
+    line-height: 1.6;
+    background: rgb(114, 202, 255, 1);
 }
 
 #SignUp{
@@ -27,116 +23,116 @@ background:  rgb(114, 202, 255, 1);
     background-size: cover;
     background-repeat: no-repeat;
     visibility: visible;
-    
-    
 }
 
 #dark-mode{
     background-color: black;
 }
 
-h1{
+h1, h2, h3 {
+    font-family: 'Your Heading Font', Arial, sans-serif; 
     color: var(--blue);
-    font-family: Garamond, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+h1 {
+    font-size: 2.4rem;
+    line-height: 1.15;
+    letter-spacing: -0.03em; 
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
 #header{
     color: rgb(7, 7, 128);
     padding: 2rem;
 }
-h2{
+
+p {
     color: var(--blue);
-    font-family: Garamond, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 2rem;
-}
-h3{
-    color: var(--blue);
-    font-family: Garamond, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-p{
-    color: var(--blue);
-    font-family: Garamond, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 2px;
 }
 
-footer{
-    color:rgb(37, 37, 231);
+nav a {
+    font-family: 'Your Heading Font', Arial, sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.15rem; 
+}
+
+cite {
+    font-style: normal;
+    font-weight: 600; 
+}
+
+code {
+    font-family: Consolas, "Andale Mono", "Courier New", monospace; 
+}
+
+caption {
+    font-weight: bold;
+    text-align: left;
+}
+
+footer, #footer {
+    color: rgb(37, 37, 231);
     background-color: rgb(83, 169, 226);
     outline-color: rgb(27,115,173);
     border-color: rgb(27, 115, 173);
     border: 3px solid;
     border-radius: 1rem;
+    padding: 8.8px;
+    outline-style: groove;
+    font-size: 0.9rem; 
+    text-align: center; 
+}
+
+footer {
     margin: 100px;
-    padding: 8.8px;
-    outline-style: groove;
-    
 }
-#footer{
-    color:rgb(37, 37, 231);
-    background-color: rgb(83, 169, 226);
-    outline-color: rgb(27,115,173);
-    border-color: rgb(27, 115, 173);
-    border: 3px solid;
-    border-radius: 1rem;
+
+#footer {
     margin: 20px;
-    padding: 8.8px;
-    outline-style: groove;
 }
+
 #footer-text{
-    color:rgb(7,7,185)
+    color: rgb(7,7,185);
 }
 
 #email{
-    color:rgb(7, 7, 185)
+    color: rgb(7, 7, 185);
 }
 #password{
-    color:rgb(7, 7, 185)
+    color: rgb(7, 7, 185);
 }
 #submit{
-    color:rgb(0, 0, 0);
-    background-color:rgb(122, 202, 255)
+    color: rgb(0, 0, 0);
+    background-color: rgb(122, 202, 255);
 }
 #submit:hover{
     animation: linear;
     transform: scale(1.055);
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     background-color: rgb(0, 147, 245);
 }
-button:focus{
+button:focus, a:focus, textarea:focus, select:focus {
     outline-style: groove;
     outline: 3px solid;
     outline-offset: 2px;
-    outline-color: rgba(0, 128, 90, 100) ;
+    outline-color: rgba(0, 128, 90, 100);
     color: rgb(252, 244, 244);
 }
-a:focus{
-    outline-style: groove;
-    outline: 3px solid;
-    outline-offset: 2px;
-    outline-color: rgba(0, 128, 90, 100) ;
-    color: rgb(252, 244, 244);
 
-}
-textarea:focus{
-      outline-style: groove;
-    outline: 3px solid;
-    outline-offset: 2px;
-    outline-color: rgba(0, 128, 90, 100) ;
-    color: rgb(252, 244, 244);
-
-}
-select:focus{
-    outline-style: groove;
-    outline: 3px solid;
-    outline-offset: 2px;
-    outline-color: rgba(0, 128, 90, 100) ;
-    color: rgb(252, 244, 244);
-
-}
-#email{
-    color:rgb(7,7,185)
-}
 #nav{
-    color:rgb(37, 37, 231);
+    color: rgb(37, 37, 231);
     background-color: rgb(83, 169, 226);
     outline-color: rgb(27,115,173);
     border-color: rgb(27, 115, 173);
@@ -147,43 +143,38 @@ select:focus{
     outline-style: ridge;
 }
 a:hover{
-color:rgb(131, 131, 131);
-background-color: rgb(53, 105, 184);  
+    color: rgb(131, 131, 131);
+    background-color: rgb(53, 105, 184);  
 }
 a:link{
-    color:rgb(0, 0, 0);
-    
+    color: rgb(0, 0, 0);
 }
 a:visited{
-color:rgb(0, 29, 192);
-background-color: rgb(53, 105, 184);
+    color: rgb(0, 29, 192);
+    background-color: rgb(53, 105, 184);
 }
 
 #ChiRow{
     display: flex;
     align-items: flex-start;
-    gap:66px;
-
+    gap: 66px;
 }
 #ChiImg{
-display: block;
-width: 100%;
-height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 #chicago{
-flex: 1;
-min-width: 0;
-
-
-
+    flex: 1;
+    min-width: 0;
 }
 
 #MapFrame{
     max-width: 100%;
     margin: 2px;
     max-width: fit-content;
-    outline:auto;
+    outline: auto;
     outline-style: groove;
     border: 6.5px;
     border-style: groove;
@@ -194,13 +185,12 @@ min-width: 0;
 #image{
     max-width: 100%;
     position: sticky;
-    color:rgb(37, 37, 231);
+    color: rgb(37, 37, 231);
     outline-color: rgb(2, 87, 143);
     border-color: rgb(7, 56, 88);
     outline-width: 10px;
     margin: 5.45px;
     outline-style: groove;
-
 }
 
 audio{
@@ -209,13 +199,10 @@ audio{
 }
 
 table{
-    font-family: Garamond,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(37, 37, 231);
     outline-color: black;
     padding: 5px;
     margin: 10px;
-    
-
 }
 
 @view-transition{
@@ -226,7 +213,6 @@ table{
     animation-duration: 0.999999s;
     animation-timing-function: ease-in-out;
 }
-
 
 ::view-transition-old(root){
     animation-name: slide-out;
@@ -242,7 +228,6 @@ table{
         translate: -50vw;
     }
 }
-
 
 @keyframes slide-in {
     form { 
