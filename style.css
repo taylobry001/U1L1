@@ -53,6 +53,7 @@ p{
     color: var(--blue);
     font-family: Garamond, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 2px;
+    
 }
 
 footer{
@@ -132,21 +133,36 @@ select:focus{
 #email{
     color:rgb(7,7,185)
 }
-#nav{
-    color:rgb(37, 37, 231);
+
+nav{
+
     background-color: rgb(83, 169, 226);
-    outline-color: rgb(27,115,173);
-    border-color: rgb(27, 115, 173);
-    border: 3px solid;
+    outline-color: rgb(7, 95, 153);
+    border: 3.5px solid rgb(10, 56, 207);
     border-radius: 1rem;
     margin: .45px;
     padding: 8.5px;
     outline-style: ridge;
+
+    ul{
+        margin: 5px;
+        padding: 10;
+    }
+    li{
+        margin: 5px;
+        padding: 10;
+    }
+    a{
+        color:rgb(0, 105, 243);
+    }
 }
+
 a:hover{
 color:rgb(131, 131, 131);
 background-color: rgb(53, 105, 184);  
 }
+
+
 a:link{
     color:rgb(0, 0, 0);
     
@@ -171,6 +187,7 @@ height: auto;
 #chicago{
 flex: 1;
 min-width: 0;
+
 
 
 
