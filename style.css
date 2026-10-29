@@ -10,10 +10,10 @@
 }
 
 body {
-    font-family: 'Your Reading Font', Garamond, serif; 
+    font-family: 'Times New Roman', Garamond, serif; 
     font-size: 1.05rem; 
     line-height: 1.6;
-    background: rgb(114, 202, 255, 1);
+    background: #68b7e9;
 }
 
 #SignUp{
@@ -29,8 +29,8 @@ body {
     background-color: black;
 }
 
-h1, h2, h3 {
-    font-family: 'Your Heading Font', Arial, sans-serif; 
+h1, h2, h3, cite {
+    font-family: 'Times New Roman', Arial, sans-serif; 
     color: var(--blue);
 }
 
@@ -46,7 +46,6 @@ h2 {
 }
 
 #header{
-    color: rgb(7, 7, 128);
     padding: 2rem;
 }
 
@@ -55,10 +54,15 @@ p {
     padding: 2px;
     
 }
+.text-container{
+    background: rgb(65, 157, 211);
+    border-radius: 1%;
+    border:rgb(10, 56, 207) solid 2px;
+
+}
 
 nav a {
-    font-family: 'Your Heading Font', Arial, sans-serif; 
-    text-transform: uppercase;
+    font-family: 'Times New Roman', Arial, sans-serif; 
     letter-spacing: .06em;
     font-weight: 600;
     text-decoration: none;
@@ -83,7 +87,7 @@ caption {
     text-align: left;
 }
 
-footer, #footer {
+footer {
     color: rgb(37, 37, 231);
     background-color: rgb(83, 169, 226);
     outline-color: rgb(27,115,173);
@@ -91,39 +95,34 @@ footer, #footer {
     border: 3px solid;
     border-radius: 1rem;
     padding: 8.8px;
+    margin: 5px;
     outline-style: groove;
     font-size: 0.9rem; 
     text-align: center; 
 }
 
-footer {
-    margin: 100px;
-}
-
-#footer {
-    margin: 20px;
-}
 
 #footer-text{
     color: rgb(7,7,185);
 }
 
-#email{
-    color: rgb(7, 7, 185);
+#password, #email{
+    background-color: rgb(84, 184, 241);
 }
-#password{
-    color: rgb(7, 7, 185);
-}
-#submit{
+.button{
     color: rgb(0, 0, 0);
     background-color: rgb(122, 202, 255);
-}
-#submit:hover{
+
+    button:hover{
     animation: linear;
-    transform: scale(1.055);
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.83) 2px 2px 2px ;
     color: rgb(0, 0, 0);
     background-color: rgb(0, 147, 245);
 }
+
+}
+
 button:focus, a:focus, textarea:focus, select:focus {
     outline-style: groove;
     outline: 3px solid;
@@ -131,50 +130,27 @@ button:focus, a:focus, textarea:focus, select:focus {
     outline-color: rgba(0, 128, 90, 100);
     color: rgb(252, 244, 244);
 }
-a:focus{
-    outline-style: groove;
-    outline: 3px solid;
-    outline-offset: 2px;
-    outline-color: rgba(0, 128, 90, 100) ;
-    color: rgb(252, 244, 244);
 
-}
-textarea:focus{
-      outline-style: groove;
-    outline: 3px solid;
-    outline-offset: 2px;
-    outline-color: rgba(0, 128, 90, 100) ;
-    color: rgb(252, 244, 244);
-
-}
-select:focus{
-    outline-style: groove;
-    outline: 3px solid;
-    outline-offset: 2px;
-    outline-color: rgba(0, 128, 90, 100) ;
-    color: rgb(252, 244, 244);
-
-}
 #email{
     color:rgb(7,7,185)
 }
-#nav{
+.nav{
     color:rgb(37, 37, 231);
     background-color: rgb(83, 169, 226);
     outline-color: rgb(7, 95, 153);
     border: 3.5px solid rgb(10, 56, 207);
     border-radius: 1rem;
-    margin: .45px;
-    padding: 8.5px;
+    margin: 1px;
+    padding: 6.5px;
     outline-style: ridge;
 
     ul{
-        margin: 5px;
-        padding: 10;
+        margin: 2px;
+        padding: 10px;
     }
     li{
-        margin: 5px;
-        padding: 10;
+        margin: 2.5px;
+        padding: 1.1px;
     }
     a{
         color:rgb(0, 105, 243);
@@ -184,6 +160,7 @@ select:focus{
 a:hover{
     color: rgb(131, 131, 131);
     background-color: rgb(53, 105, 184);  
+
 }
 
 
@@ -194,7 +171,33 @@ a:visited{
     color: rgb(0, 29, 192);
     background-color: rgb(53, 105, 184);
 }
+.card-container{
+    background: rgb(65, 157, 211);
+    border: rgb(21, 74, 173) solid 3px;
+    padding: .5rem;
+    margin: 1rem;
+    max-width: 700px;
 
+    display: grid;
+    grid-template-columns:1;
+    grid-gap: 10px
+    
+    
+}
+.card, img{
+    display: grid;
+    grid-template-rows:  max-content 200px 1fr;
+}
+.card-footer{
+    padding: .5rem;
+    margin: 1rem;
+    border: black solid 2px;
+    background-color:rgb(56, 163, 224)
+}
+
+.text-container{
+    margin: 5.5px;
+}
 #ChiRow{
     display: flex;
     align-items: flex-start;
@@ -226,15 +229,14 @@ min-width: 0;
     border-color: rgb(12, 96, 165);
 }
 
-#image{
+.image{
     max-width: 100%;
     position: sticky;
     color: rgb(37, 37, 231);
     outline-color: rgb(2, 87, 143);
     border-color: rgb(7, 56, 88);
-    outline-width: 10px;
-    margin: 5.45px;
-    outline-style: groove;
+  
+    
 }
 
 audio{
