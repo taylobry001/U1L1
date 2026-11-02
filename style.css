@@ -7,6 +7,34 @@
 
 .intro{
     width: 100%;
+    display: flow-root;
+
+    .hero{
+        float: right;
+        width: 50%;
+        margin: 0 0 .5rem 1.5rem;
+    }
+}
+
+.intro{
+    p::first-letter{
+        float: left;
+        font-family: 'Times New Roman', Arial, sans-serif;
+        font-size: 3rem;
+        line-height: .85;
+        padding-right: .35rem;
+        color: var(--blue);
+    }
+}
+
+.about{
+    display: flow-root;
+
+    .hero{
+        float: left;
+        width: 45%;
+        margin: 0 1.5rem .5rem 0;
+    }
 }
 
 body {
@@ -45,6 +73,23 @@ h2 {
     margin-top: 2rem;
 }
 
+h2{
+    clear: both;
+}
+
+h2 + p{
+    margin-top: .5rem;
+}
+
+li::marker{
+    color: var(--green);
+}
+
+::selection{
+    background-color: var(--blue);
+    color: #ffffff;
+}
+
 #header{
     padding: 2rem;
 }
@@ -71,6 +116,21 @@ nav a {
 blockquote {
     font-style: italic;
     font-size: 1.15rem; 
+}
+
+blockquote{
+    position: relative;
+    padding-left: 3rem;
+
+    &::before{
+        content: "\201C";
+        position: absolute;
+        left: .8rem;
+        top: .3rem;
+        font-size: 3rem;
+        line-height: 1;
+        color: var(--green);
+    }
 }
 
 cite {
@@ -249,6 +309,61 @@ table{
     outline-color: black;
     padding: 5px;
     margin: 10px;
+}
+
+dl{
+    dd + dt{
+        margin-top: 1rem;
+    }
+}
+
+fieldset{
+    legend ~ p{
+        margin: .35rem 0;
+    }
+}
+
+form{
+    input:checked + label{
+        font-weight: 700;
+    }
+    p:focus-within{
+        background-color: var(--lightblue);
+    }
+}
+
+#steps{
+    li:not(:last-child){
+        border-bottom: 2px dotted var(--blue);
+        padding-bottom: .4rem;
+        margin-bottom: .4rem;
+    }
+}
+
+.trail-groups{
+    list-style-type: none;
+    padding-left: 0;
+
+    > li{
+        display: inline-block;
+        vertical-align: top;
+        width: 32%;
+        box-sizing: border-box;
+        padding: .5rem;
+        background-color: var(--lightblue);
+        border: 2px solid var(--blue);
+        border-radius: 1rem;
+
+        ul{
+            margin: .5rem 0 0;
+            padding-left: 1.1rem;
+        }
+
+        strong{
+            display: block;
+            text-align: center;
+        }
+    }
 }
 
 @view-transition{
